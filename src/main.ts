@@ -4,8 +4,8 @@ import {inspect} from 'util'
 async function run(): Promise<void> {
     let token = process.env["REPO_ACCESS_TOKEN"]
     let repository = "infinitasx/demo-devops"
-    let eventType = "eks-deploy"
-    let clientPayload = {ref:"master",sha:"demo"}
+    let eventType = "deploy-to-test"
+    let clientPayload = {arg1:"master",arg2:"4eac18d22ad4f42fd0813e18d88195ff4253be04echo"}
 
     try {
         const inputs = {
